@@ -1,8 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/m-wqxvhW)
 # Auteur
 Naam:
+Maarten Eijgenhuijsen
 
 Studentnummer:
+1868212
 
 # Installatie
 Als er nog geen omgeving genaamd s2-ai is, creeer deze dan door in Anaconda Prompt naar de directory van dit project te 
