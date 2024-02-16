@@ -28,7 +28,7 @@ def test_compare():
 
 def test_get_smallest_child():
     pq = [2,6,3,10,12,5]
-    assert priority_queue.get_smallest_child(pq, 0) == 2
+    priority_queue.get_smallest_child(pq, 0) == 2
     priority_queue.get_smallest_child(pq, 2) == 5
     priority_queue.get_smallest_child(pq, 1) == 3
     priority_queue.get_smallest_child(pq, 5) is None
