@@ -4,38 +4,53 @@ Gebruik main.py om de volgende vragen te beantwoorden
 
 2. Draai net als in je vooronderzoek met een sim_length van 1000, 10.000 en 100.000 en houdt voor elk bij
 1.000
-Library Priority Queue:
-Student Priority Queue:
-Brute Force:
+Library Priority Queue: 0.0269167423248291
+Student Priority Queue: 0.03141331672668457
+Brute Force: 0.039870500564575195
 
 10.000
-Library Priority Queue:
-Student Priority Queue:
-Brute Force:
+Library Priority Queue: 0.3072509765625
+Student Priority Queue: 0.31668519973754883
+Brute Force: 1.0693531036376953
 
 100.000
-Library Priority Queue:
-Student Priority Queue:
-Brute Force:
+Library Priority Queue: 2.599928855895996
+Student Priority Queue: 3.172555685043335
+Brute Force: 170.08568143844604
 
 3. Wat valt je op aan de verhoudingen tussen de verschillende implementaties?
 3a. Vanaf wanneer wordt jouw implementatie sneller dan de list implementatie
+    Mijn implementatie van een priority queue (min-heap) is sneller dan de brute force-lijstimplementatie vanaf een sim_length van 15 en 20 elementen.
+
 3b. Hoe verklaar je het antwoord op 3a
+    Mijn implementatie van een priority queue heeft een betere tijdcomplexiteit dan brute force-lijstimplementaties,
+    vooral bij een groot aantal elementen. De reden hiervoor is dat het toevoegen en verwijderen van elementen in een min-heap een logaritmische
+    complexiteit heeft in plaats van lineaire complexiteit zoals bij een lijst
+
 3c. Heeft jouw implementatie van priority queue dezelfde Big-O complexity als de library implementatie?
+    Ja, mijn implementatie van een priority queue heeft dezelfde Big-O-complexiteit als de library-implementatie. Beide hebben een logaritmische complexiteit.
 
 4. Comment de brute force methode en draai nu met een sim_length van 1.000.000 en 10.000.000, dit kan wel even duren.
 1.000.000 (duurt al snel meerdere minuten)
-Library Priority Queue:
-Student Priority Queue:
+Library Priority Queue: 26.89950942993164 seconds
+Student Priority Queue: 31.581422567367554 seconds
 
 10.000.000 (duurt al snel 20 minuten)
-Library Priority Queue:
-Student Priority Queue:
+Library Priority Queue: 6 minutes and 50.8293890953064 seconds
+Student Priority Queue: 6 minutes and 58.758758544921875 seconds
 
 5. Probeer te verklaren waarom jouw implementatie van Priority Queue langzamer is:
 5a. Probeer elke operator apart te timen in de library_priority_queue() en student_priority_queue(), let met name op insert(), push() en pop(), wat zie je?
+    mijn implementatie is ongeveer 3-07 keer langzamer dan de library-implementatie.
 5b. Wat kan je vinden op het internet
+    de library implantatie is waarschijnlijk geschreven in C of C++ en is daardoor sneller dan mijn implementatie die in Python is geschreven.
+    De library-implementatie is geoptimaliseerd voor snelheid terwijl mijn implementatie minder geoptimaliseerd is.
+
 5c. Wat is je conclusie?
+    de combinatie van optimalisatie en de taal waarin de implementatie is geschreven, maakt de library-implementatie sneller dan mijn implementatie.
 
 6. Extra: Probeer een significante slag te maken in de efficiency van je implementatie van priority_queue, verklaar wat je hebt veranderd
+    ik heb aan edge cases gedacht waardoor je eerder klaar bent met de functies, zoals als de heap leeg is of als de heap maar 1 element heeft.
+    Ook heb ik geprobeerd om de code zo simpel mogelijk te houden en geen onnodige swaps te maken.
+
 7. Extra: Als het je lukt om jouw implementatie minder dan 1.7x zo langzaam te maken kom dan langs bij de docent want dat is een indrukwekkende prestatie

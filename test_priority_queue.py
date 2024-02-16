@@ -28,7 +28,7 @@ def test_compare():
 
 def test_get_smallest_child():
     pq = [2,6,3,10,12,5]
-    priority_queue.get_smallest_child(pq, 0) == 2
+    assert priority_queue.get_smallest_child(pq, 0) == 2
     priority_queue.get_smallest_child(pq, 2) == 5
     priority_queue.get_smallest_child(pq, 1) == 3
     priority_queue.get_smallest_child(pq, 5) is None
@@ -68,3 +68,17 @@ def test_from_list():
     lst = [10, 3, 5, 6, 12, 2]
     pq = priority_queue.from_list(lst)
     assert pq == [2,6,3,10,12,5]
+
+# test priority_queue.py
+def test_priority_queue():
+    test_get_parent()
+    test_get_childs()
+    test_compare()
+    test_get_smallest_child()
+    test_top()
+    test_swap()
+    test_insert()
+    test_pop()
+    test_from_list()
+    print("priority_queue.py: All tests passed")
+test_priority_queue()
